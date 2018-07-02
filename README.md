@@ -20,17 +20,21 @@ Dentro do Toolkit do Watson Assistant criado, devemos pegar as credenciais da AP
 
 ![Workspaces](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-06.png) 
 
+![Credentials](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-07.png)
+
+Deixe esta página aberta pois futuramente copiaremos o "Workspace ID","Username" e "Password" para deploy da página Web.
+
 ## Deploy da página Web
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/victorshinya/pizza)
-
-[Deploy Web Page](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-07.png)
 
 ![Deploy](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-08.png)
 
 ![Toolchain](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-09.png)
 
-![Eclipse Orion Web IDE](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-10.png)
+Devemos abrir a Web IDE, substituir as credenciais (que copiamos anteriormente do Watson Assistant) na pasta .env e criar as configurações de launching.
+
+![Eclipse Orion Web IDE](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-14.png)
 
 ![Configuração de Ativação](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-11.png)
 
