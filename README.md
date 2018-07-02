@@ -14,9 +14,9 @@ Este é o passo-a-passo de como subir um chatbot em uma página web usando *Wats
 
 Dentro do Toolkit do Watson Assistant criado, devemos pegar as credenciais da API. Siga as passos abaixo
 
-![Launch Tool](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-04.png)
-
 ![Watson Assistant Toolkit](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-05.png)
+
+![Launch Tool](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-04.png)
 
 ![Workspaces](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-06.png) 
 
