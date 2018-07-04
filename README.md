@@ -8,7 +8,9 @@ Este é o passo-a-passo de como subir um chatbot em uma página web usando *Wats
 
 ![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-01.png)
 
-![Manage Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-02.png)
+![Delivery Pipeline](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-02.02.png)
+
+![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-02.03.png)
 
 ![Dashboard Bot Asset Exchange Workspaces](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-03.png)
 
@@ -18,7 +20,7 @@ Dentro do Toolkit do Watson Assistant criado, devemos pegar as credenciais da AP
 
 ![Launch Tool](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-04.png)
 
-![Workspaces](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-06.png) 
+![Workspaces](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-06.png)
 
 ![Credentials](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-07.png)
 
@@ -40,4 +42,4 @@ Devemos abrir a Web IDE, substituir as credenciais (que copiamos anteriormente d
 
 ![Botão Play e Abrir página Web](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-12.png)
 
-![Seu BOT](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-13.png) 
+![Seu BOT](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-13.png)
