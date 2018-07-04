@@ -10,7 +10,11 @@ Este é o passo-a-passo de como subir um chatbot em uma página web usando *Wats
 
 ![Delivery Pipeline](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-02.02.png)
 
+Neste passo, veja se o seu deploy foi realizado, isto é, o deploy está em modo "stage passed". Se estiver como "stage not run", você deve apenas dar um play na esteira de devops conforme abaixo:
+
 ![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-02.03.png)
+
+Uma vez que seu sistema estiver em modo "stage passed", clique no ícone IBM Cloud para acessar o dashboard com serviços criados:
 
 ![Dashboard Bot Asset Exchange Workspaces](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-03.png)
 
