@@ -24,7 +24,7 @@ Dentro do Toolkit do Watson Assistant criado, devemos pegar as credenciais da AP
 
 ![Launch Tool](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-04.png)
 
-![Workspaces](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-06.png)
+![Workspaces](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-20.png)
 
 ![Credentials](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-07.png)
 
@@ -53,3 +53,7 @@ Por último, teremos que linkar as nossas credenciais, no front end. Para isso c
 E adicione as credenciais que copiamos lá no ítem X:
 
 ![Credenciais2](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-19.png)
+
+Agora é só testar \o/
+
+![Teste](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-21.png)
