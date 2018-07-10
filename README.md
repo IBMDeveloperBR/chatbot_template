@@ -34,16 +34,4 @@ Deixe esta página aberta pois futuramente copiaremos o "Workspace ID","Username
 
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ibm-code-br/tdc-bot)
 
-![Deploy](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-08.png)
-
-![Toolchain](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-09.png)
-
-Devemos abrir a Web IDE, substituir as credenciais (que copiamos anteriormente do Watson Assistant) na pasta .env e criar as configurações de launching.
-
-![Eclipse Orion Web IDE](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-14.png)
-
-![Configuração de Ativação](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-11.png)
-
-![Botão Play e Abrir página Web](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-12.png)
-
 ![Seu BOT](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-13.png)
