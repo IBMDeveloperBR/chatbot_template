@@ -26,7 +26,7 @@ Dentro do Toolkit do Watson Assistant criado, devemos pegar as credenciais da AP
 
 ![Workspaces](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-22.png)
 
-![Credentials](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-07.png)
+![Credentials](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-23.png)
 
 Deixe esta página aberta pois futuramente copiaremos o "Workspace ID","Username" e "Password" para deploy da página Web.
 
