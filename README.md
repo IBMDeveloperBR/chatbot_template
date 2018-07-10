@@ -32,8 +32,24 @@ Deixe esta página aberta pois futuramente copiaremos o "Workspace ID","Username
 
 ## Deploy da página Web
 
+Neste momento subiremos uma aplicação Web para linkar a nossa API de Chatbot.
+
 [![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ibm-code-br/tdc-bot)
 
-![Deploy](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-08.png)
+![Deploy](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-15.png)
 
-![Seu BOT](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-13.png)
+Já que estamos subindo um projeto completo, ele pode levar um certo tempo para estar completamente disponível (Não se preocupe, não será nada mais que 2 minutos). Para isso, vamos acompanhar a esteira de deploy no Delivery Pipeline.
+
+![Delivery Pipeline](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-16.png)
+
+Quando a aplicação estiver pronta, você poderá clicar no link conforme abaixo:
+
+![Link App](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-17.png)
+
+Por último, teremos que linkar as nossas credenciais, no front end. Para isso clique na "engrenagem" à esquerda:
+
+![Credenciais](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-18.png)
+
+E adicione as credenciais que copiamos lá no ítem X:
+
+![Credenciais2](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-19.png)
