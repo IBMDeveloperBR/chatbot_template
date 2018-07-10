@@ -1,0 +1,7 @@
+applications:
+- path: .
+  memory: 128M
+  instances: 1
+  routes: 
+    - route: ultimate-chatbot-${random-word}.mybluemix.net
+  disk_quota: 256M

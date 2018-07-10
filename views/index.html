@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Watson Conversation</title>
+    <!-- Compiled and minified CSS -->
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/css/materialize.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.1/js/materialize.min.js"></script>
+
+    <link rel="stylesheet" href="/style/index.css" type="text/css" />
+</head>
+
+<body>
+
+    <div class="config">
+        <a class="settings-icon modal-trigger" href="#configurationModal">
+                <i class="material-icons">settings</i>
+                </a>
+    </div>
+    <div id="chat_div">
+
+    </div>
+
+
+    <!-- Modal Structure -->
+    <div id="configurationModal" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <h4>Configurations</h4>
+            <ul id="" class="tabs transparent">
+                <li class="tab col s3"><a class="blue-text active" href="#services">Services</a></li>
+                <li class="tab col s3"><a class="blue-text" href="#layout">Layout</a></li>
+            </ul>
+            <div id="alertDiv"></div>
+            <div class="row">
+                <div class="col s12" id="services">
+                    <div class="row">
+                        <h5>Conversation</h5>
+                        <div class="col s12 m5">
+                            <div class="col s12">
+                                <p>
+                                    <input class="with-gap conv_radio" name="conversation_services" type="radio" id="node_red" />
+                                    <label for="node_red">Node-Red</label>
+                                </p>
+                            </div>
+                            <div class="col s12">
+                                <p>
+                                    <input class="with-gap conv_radio" name="conversation_services" type="radio" id="custom_conversation" />
+                                    <label for="custom_conversation">Custom Conversation</label>
+                                </p>
+                            </div>
+                            <div class="col s12">
+                                <p>
+                                    <input class="with-gap conv_radio" name="conversation_services" type="radio" id="built_in_conv" />
+                                    <label for="built_in_conv">Built in Conversation</label>
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="col s12 m7">
+                            <div class="input-field col s12 hide" id="node_red_uri_holder">
+                                <input placeholder="Node Red URL" id="node_red_uri" type="url" class="validate">
+                                <label for="node_red_uri">Node Red URL</label>
+                            </div>
+                            <div class="input-field col s12 hide" id="conv_username_holder">
+                                <input placeholder="Conversation username" id="conv_username" type="text" class="validate">
+                                <label for="conv_username">Username</label>
+                            </div>
+                            <div class="input-field col s12 hide" id="conv_password_holder">
+                                <input placeholder="Conversation password" id="conv_password" type="password" class="validate">
+                                <label for="conv_password">Password</label>
+                            </div>
+                            <div class="input-field col s12 hide" id="conv_workspace_holder">
+                                <input placeholder="Workspace-id" id="conv_workspace" type="text" class="validate">
+                                <label for="conv_workspace">Workspace-id</label>
+                            </div>
+                        </div>
+
+                        <div class="col s12">
+                            <p>
+                                <input type="checkbox" id="remember_services" />
+                                <label for="remember_services">Remember these configurations</label>
+                            </p>
+                            <a class="waves-effect waves-light btn" id="reset_services_btn">Reset saved config.</a>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+                <div class="col s12 " id="layout">
+
+
+                    <div class="row">
+                        <h5>Display</h5>
+                        <div class="col s6 m4">
+                            <div class="card">
+                                <div class="card-content classic_theme">
+                                    <div class="chat_popup" id="chat_popup_classic">
+                                        <div class="chat_header" id="chat_header_classic">Chat with Watson</div>
+                                        <div class="chat_body" id="chat_body_classic">
+                                            <div class="bubble watson">Bubble</div>
+                                        </div>
+                                        <div class="chat_footer" id="chat_footer_classic">
+                                            <input type="text" disabled class="chat_input" placeholder="Type a message.." />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="s12  theme_name">
+                                <p>
+                                    <input class="with-gap " name="theme" type="radio" id="classic_radio" />
+                                    <label for="classic_radio">Classic</label>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row hide" id="popup_size">
+                        <h5>Chat popup size</h5>
+
+                        <div class="s12">
+                            <p>
+                                <input class="with-gap chat_popup_size_radio" name="chat_popup_size" type="radio" id="full_chat_size" />
+                                <label for="full_chat_size">Full size</label>
+                            </p>
+                            <p>
+                                <input class="with-gap chat_popup_size_radio" name="chat_popup_size" type="radio" id="default_chat_size" checked />
+                                <label for="default_chat_size">Default size</label>
+                            </p>
+                            <!-- <p>
+                                <input class="with-gap chat_popup_size_radio" name="chat_popup_size" type="radio" id="custom_chat_size"  />
+                                <label for="custom_chat_size">Custom size</label>
+                            </p> -->
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="#!" class="modal-action  waves-effect waves-green btn-flat modal-close">close</a>
+            <a href="#!" class="modal-action  waves-effect waves-green btn-flat " id="apply-btn">Apply</a>
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScripts Files -->
+    <script src="js/xhr.js"></script>
+    <script src="js/util.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/layout.js"></script>
+    <script src="js/services.js"></script>
+
+    <script src="js/scripts.js"></script>
+
+
+</body>
+
+</html>

@@ -32,7 +32,7 @@ Deixe esta página aberta pois futuramente copiaremos o "Workspace ID","Username
 
 ## Deploy da página Web
 
-[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/Bluemix-Estag/Ultimate-ChatBot/)
+[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ibm-code-br/tdc-bot)
 
 ![Deploy](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-08.png)
 
