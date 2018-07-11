@@ -47,7 +47,7 @@ Neste momento subiremos uma aplicação Web para linkar a nossa API de Chatbot.
 ### 11.Deploy da Página Web
 ![Deploy](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-15.png)
 
-Já que estamos subindo um projeto completo, ele pode levar um certo tempo para estar completamente disponível (Não se preocupe, não será nada mais que 2 minutos). Para isso, vamos acompanhar a esteira de deploy no Delivery Pipeline.
+Já que estamos subindo um projeto completo, ele pode levar um certo tempo para estar completamente disponível (Não se preocupe, não será nada mais que 3 minutos). Para isso, vamos acompanhar a esteira de deploy no Delivery Pipeline.
 
 ### 12.Abrir o Delivery Pipeline
 ![Delivery Pipeline](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-16.png)
