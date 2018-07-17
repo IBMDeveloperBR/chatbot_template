@@ -8,8 +8,10 @@ Neste momento subiremos um workspace no Watson Assistant, isto é, um chatbot co
 
 ### 1. [![Deploy Watson Assistant](https://bluemix.net/deploy/button.png)](https://console.bluemix.net/devops/setup/deploy?repository=https://github.com/victorshinya/chatbot-deployer&chatbotName=Chatbot&chatbotWorkspaceURL=https://github.com/victorshinya/chatbot-deployer/raw/master/data/workspace.json)
 
-### 2. Deploy do Workspace
-![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-01.png)
+### 2. Deploy do Workspace. Aqui você deve clicar no quadrado do *Delivery Pipeline* e criar a sua API-KEY. **IMPORTANTE**: fazer o mesmo passo quando for subir a aplicação Web. Siga as imagens abaixo
+![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-01.02.png)
+![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-01.03.png)
+![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-01.04.png)
 
 ### 3. Abrir o Delivery Pipeline
 ![Delivery Pipeline](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-02.02.png)
