@@ -8,7 +8,7 @@ Neste momento subiremos um workspace no Watson Assistant, isto é, um chatbot co
 
 ### 1. [![Deploy Watson Assistant](https://bluemix.net/deploy/button.png)](https://console.bluemix.net/devops/setup/deploy?repository=https://github.com/victorshinya/chatbot-deployer&chatbotName=Chatbot&chatbotWorkspaceURL=https://github.com/victorshinya/chatbot-deployer/raw/master/data/workspace.json)
 
-### 2. Deploy do Workspace. Aqui você deve clicar no quadrado do *Delivery Pipeline* e criar a sua API-KEY. **IMPORTANTE**: fazer o mesmo passo quando for subir a aplicação Web. Siga as imagens abaixo
+### 2. Deploy do Workspace. Aqui você deve clicar no quadrado do *Delivery Pipeline* e criar a sua API-KEY.
 ![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-01.02.png)
 ![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-01.03.png)
 ![Deploy Watson Assistant Workspace](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-01.04.png)
@@ -46,8 +46,9 @@ Neste momento subiremos uma aplicação Web para linkar a nossa API de Chatbot.
 
 ### 10.[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ibm-code-br/tdc-bot)
 
-### 11.Deploy da Página Web
-![Deploy](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-15.png)
+### 11.Deploy da Página Web. Aqui você deve clicar no quadrado do *Delivery Pipeline* e criar a sua API-KEY.
+![Deploy](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-15.02.jpeg)
+![Deploy](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-15.03.jpeg)
 
 Já que estamos subindo um projeto completo, ele pode levar um certo tempo para estar completamente disponível (Não se preocupe, não será nada mais que 3 minutos). Para isso, vamos acompanhar a esteira de deploy no Delivery Pipeline.
 
@@ -56,8 +57,9 @@ Já que estamos subindo um projeto completo, ele pode levar um certo tempo para 
 
 Quando a aplicação estiver pronta, você poderá clicar no link conforme abaixo:
 
-### 13.Clicar no link da aplicação criada
-![Link App](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-17.png)
+### 13.Aqui você vai ter que clicar no titulo "IBM Cloud" no canto superior esquerdo. Ele vai te direcionar para a página do Dashboard.
+![Link App](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-17.02.jpeg)
+![Link App](https://github.com/ibm-code-br/tdc-bot/raw/master/print/tutorial-chatbot-17.03.jpeg)
 
 Por último, teremos que linkar as nossas credenciais, no front end. Para isso clique na "engrenagem" à direita:
 
