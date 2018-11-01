@@ -42,6 +42,8 @@ app.post('/api/conversation', (req, res) => {
         case 'Built-in-Conversation':
             builtInConversation(req, res);
             break;
+
+        case 'Api-Key':
         case 'Custom-Conversation':
             customConversation(req, res);
             break;
@@ -99,20 +101,27 @@ const customConversation = (req, res) => {
     console.log('Custom conversation method invoked..');
     const configurations = req.body.configurations;
     const params = req.body.params;
-    const authentication_key = new Buffer(`${configurations['username']}:${configurations['password']}`).toString('base64');
+    let authentication_key;
+    let authorization_header;
+    if(configurations.type == 'Api-Key'){
+        authentication_key = new Buffer(`apikey:${configurations['api_key']}`).toString('base64');
+        authorization_header =  `Basic ${authentication_key}`;
+    } else {
+        authentication_key = new Buffer(`${configurations['username']}:${configurations['password']}`).toString('base64');
+        authorization_header = `Basic ${authentication_key}`;
+    }
 
-    const options = {
-        url: `https://gateway.watsonplatform.net/conversation/api/v1/workspaces/${configurations['workspace_id']}/message?version=2017-05-26`,
+    let options = {
+        url: `https://gateway.watsonplatform.net/assistant/api/v1/workspaces/${configurations['workspace_id']}/message?version=2018-09-20`,
         method: 'POST',
         headers: {
-            'Authorization': `Basic ${authentication_key}`,
+            'Authorization': authorization_header,
             'Content-Type': 'application/json'
         },
         body: JSON.stringify(params)
     }
 
     request(options, (error, response, body) => {
-
         if (!error && response.statusCode == 200) {
             res.status(200).json(JSON.parse(body));
         } else {
