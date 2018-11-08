@@ -6,19 +6,29 @@ const radioToggle = () => {
 
     let node_red_radio = document.getElementById('node_red');
     let conv_radio = document.getElementById('custom_conversation');
+    let api_key = document.getElementById('api_key');
     if (node_red_radio.checked) {
         removeClass('node_red_uri_holder', 'hide');
         addClass('conv_username_holder', 'hide');
         addClass('conv_password_holder', 'hide');
         addClass('conv_workspace_holder', 'hide');
+        addClass('api_key_holder', 'hide');
 
+    } else if(api_key.checked) {
+        removeClass('api_key_holder', 'hide');
+        removeClass('conv_workspace_holder', 'hide');
+        addClass('conv_username_holder', 'hide');
+        addClass('conv_password_holder', 'hide');
+        addClass('node_red_uri_holder', 'hide');
     } else if (conv_radio.checked) {
         addClass('node_red_uri_holder', 'hide');
+        addClass('api_key_holder', 'hide');
         removeClass('conv_username_holder', 'hide');
         removeClass('conv_password_holder', 'hide');
 
         removeClass('conv_workspace_holder', 'hide');
     } else {
+        addClass('api_key_holder', 'hide');
         addClass('node_red_uri_holder', 'hide');
         addClass('conv_username_holder', 'hide');
         addClass('conv_password_holder', 'hide');
@@ -39,20 +49,29 @@ const preLoadServicesData = () => {
     let red_radio = document.getElementById('node_red');
     let conv_radio = document.getElementById('custom_conversation');
     let conv_built_in = document.getElementById('built_in_conv');
+    let api_key = document.getElementById('api_key');
 
     addClass('node_red_uri_holder', 'hide');
     addClass('conv_username_holder', 'hide');
     addClass('conv_password_holder', 'hide');
     addClass('conv_workspace_holder', 'hide');
+    addClass('api_key_holder', 'hide');
 
     red_radio.checked = false;
     conv_radio.checked = false;
     conv_built_in.checked = false;
+    api_key.checked = false;
 
     if (config['type'] === 'Node-Red') {
         red_radio.checked = true;
         document.getElementById('node_red_uri').value = config['url'];
         removeClass('node_red_uri_holder', 'hide');
+    } else if (config['type'] === 'Api-Key') {
+        api_key.checked = true;
+        document.getElementById('api_key_input').value = config['api_key'];
+        document.getElementById('conv_workspace').value = config['workspace_id'];
+        removeClass('api_key_holder', 'hide');
+        removeClass('conv_workspace_holder', 'hide');
     } else if (config['type'] === 'Custom-Conversation') {
         conv_radio.checked = true;
         document.getElementById('conv_username').value = config['username'];
@@ -104,6 +123,7 @@ const saveServicesConfigurations = () => {
 
     const red_radio = document.getElementById('node_red');
     const conv_radio = document.getElementById('custom_conversation');
+    let api_key = document.getElementById('api_key');
 
     const remember = document.getElementById('remember_services').checked;
 
@@ -131,6 +151,28 @@ const saveServicesConfigurations = () => {
         }
 
 
+    } else if(api_key.checked){
+        const api_key_input = document.getElementById('api_key_input');
+        if (api_key_input != null && api_key_input.value != '') {
+            const workspace_input = document.getElementById('conv_workspace');
+            if (workspace_input != null && workspace_input.value != '') {
+                let config = {};
+                config['type']='Api-Key';
+                config['workspace_id'] = workspace_input.value.trim();
+                config['api_key'] = api_key_input.value.trim();
+                configurations['services']['conversation'] = config;
+                if (remember) {
+                    configurations['services']['settings']['remember'] = true;
+                    deleteStorage('configurations');
+                    setStorage('configurations', configurations);
+                } else {
+                    deleteStorage('configurations');
+                }
+                deleteSession('configurations');
+                setSession('configurations', configurations);
+                restageApp();
+            }
+        }
     } else if (conv_radio.checked) {
         const username_input = document.getElementById('conv_username');
         if (username_input && username_input.value != '') {

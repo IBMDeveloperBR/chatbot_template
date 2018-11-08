@@ -5,14 +5,12 @@
 let params = {
         input: {}
     },
-    context = {
-        timezone: "America/Sao_Paulo"
-    };
+    context = null;
 
 
 const userMessage = (message) => {
 
-    params.input.text = (message != '')? message: ' ';
+    params.input.text = (message != '') ? message: '';
     params.context = context;
 
 
@@ -67,7 +65,5 @@ const displayMessage = (message, user) => {
 
  
 const resetContext = () => {
-    context = {
-        timezone: "America/Sao_Paulo"
-    };
+    context = null;
 }
