@@ -44,7 +44,7 @@ Deixe esta página aberta pois futuramente copiaremos o "Workspace ID","Username
 
 Neste momento subiremos uma aplicação Web para linkar a nossa API de Chatbot.
 
-### 10.[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ibm-developer-br/tdc-bot)
+### 10.[![Deploy to Bluemix](https://bluemix.net/deploy/button.png)](https://bluemix.net/deploy?repository=https://github.com/ibm-developer-br/chatbot_template)
 
 ### 11.Deploy da Página Web. Aqui você deve clicar no quadrado do *Delivery Pipeline* e criar a sua API-KEY.
 ![Deploy](https://github.com/ibm-developer-br/tdc-bot/raw/master/print/tutorial-chatbot-15.02.jpeg)
